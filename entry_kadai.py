@@ -6,9 +6,10 @@ import tkinter as tk
 
 def dispLabel():
     #entryメソッドを利用して入力を受け付け
-    a = entry.get()
+    a = int(entry.get())
     print(type(a))
-    lbl2.config(text=f"税込み金額は{a}円です。")
+    a *= 1.1
+    lbl2.config(text=f"税込み金額は{int(a)}円です。")
 
 
 root = tk.Tk()
